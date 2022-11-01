@@ -7,13 +7,17 @@
 int main(int argc, char *argv[]) {
 	int i;
 	int grade[SIZE];
-	printf("input 5 scores: \n");
+	int score[SIZE];
 	
 	for(i=0;i<SIZE;i++)
-		scanf("%d",&grade[i]);
+		grade[i] = rand() % 100;
 		
 	for(i=0;i<SIZE;i++)
-		printf("grade[%d]=%d\n",i,grade[i]);
+		score[i] = grade[i];
+	
+		
+	for(i=0;i<SIZE;i++)
+		printf("score[%d]=%d(%d)\n",i,score[i],grade[i]);
 		
 	return 0;
 }

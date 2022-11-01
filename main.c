@@ -7,7 +7,7 @@
 int main(int argc, char *argv[]) {
 	int i;
 	int grade[SIZE];
-	printf("5명의 점수를 입력하시오\n");
+	printf("input 5 scores: \n");
 	
 	for(i=0;i<SIZE;i++)
 		scanf("%d",&grade[i]);
